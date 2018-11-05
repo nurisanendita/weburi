@@ -1,0 +1,102 @@
+body{
+  font-family: 'Asap', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+/* #wrapper{width: 100%;} */
+
+#logo{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 52px;
+  top: 49px;
+}
+
+#sidenav {
+   font-family: 'Open Sans', sans-serif;
+    float: left;
+    height: 100%;
+    width: 154px;
+    position: fixed;
+    background-color: #ffffff;
+    overflow:hidden;
+    z-index: 100;
+}
+
+#sidenav a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block;
+    position: relative;
+    top: 35%;
+    left: 30%;
+}
+
+#sidenav div a:hover {
+    color: #1381A2;
+}
+
+#nav1{
+  position: relative;
+  top:24%;
+}
+#nav2{
+  position: relative;
+  top:28%;
+}
+#nav3{
+  position: relative;
+  top:32%;
+}
+
+#sidenav div {
+  height: 120px;
+}
+
+#sidenav div.current{
+  border-right: 4px solid #1381A2;
+  /* border-spacing: 40px 0px; */
+}
+
+#sidenav div.current a{
+  color: #1381A2;
+  font-weight: 600;
+}
+
+#contents {
+  /* padding-left: 154px; */
+  z-index: -1;
+  height: 100%;
+  background-color: #ffffff;
+  overflow:auto;
+  position: relative;
+}
+
+#hello .wrapper {
+  z-index: -100;
+  height:800px;
+  display: grid;
+  grid-template-columns: 180px 180px 180px 180px 180px 180px 180px;
+}
+
+#hello .wrapper div {
+  border-right: 4px solid #F8F8F8;
+  color: #d9480f;
+}
+
+.bigTitle{
+  z-index: 100;
+  font-family: 'Asap', sans-serif;
+  font-size: 200px;
+  color: #F8F8F8;
+  font-weight: 500;
+}
+/* ------------------------ */
+/*         responsive       */
+/* ------------------------ */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
